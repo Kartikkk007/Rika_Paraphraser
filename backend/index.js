@@ -1,8 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import paraphraseRoute from './routes/paraphrasRoutese.js';
-
+import paraphraseRoutes from './routes/paraphraseRoutes.js';
 dotenv.config();
 
 const app = express();
