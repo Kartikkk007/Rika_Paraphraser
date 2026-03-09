@@ -16,9 +16,9 @@ function App() {
     if (!inputText) return;
     setLoading(true);
     try {
-      const { data } = await axios.post('http://localhost:5000/api/paraphrase', {
-        text: inputText,
-        mode: activeMode
+      const { data } = await axios.post('/api/paraphrase', { 
+     text: inputText,
+     mode: activeMode
       });
       setOutText(data.output);
     } catch (err) {
